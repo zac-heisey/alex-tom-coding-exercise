@@ -34,24 +34,41 @@ header {
   background: url('/Assets/circuit-black.svg');
   height: 600px;
   display: flex;
+  justify-content: space-between;
 }
 
 #intro-content {
-  width: 60%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 0 1rem;
+}
+
+svg {
+  align-self: flex-start;
+  min-width: 94px;
 }
 
 h1 {
+  font-size: 2rem;
   font-weight: 700;
 }
 
 /* CTA */
 
 #cta {
-  width: 40%;
+  width: 45%;
   background: url('/Assets/zigzag-yellow-md.png') no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 2rem 0 0 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cta > div {
+  width: 50%;
+  min-width: 324px;
 }
 
 #cta-tagline {
@@ -64,11 +81,6 @@ h1 {
 .input-fields {
   background-color: var(--white);
   padding: 1rem;
-}
-
-.input-fields, #cta-tagline {
-  width: 80%;
-  max-width: 340px;
 }
 
 label {
