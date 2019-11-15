@@ -27,11 +27,12 @@ body, label, input {
   font-family: var(--main-font);
 }
 
-/* Header */
+/* Header & CTA */
 
 header {
   color: var(--white);
   background: url('/Assets/circuit-black.svg');
+  background-color: var(--dark-gray);
   height: 600px;
   display: flex;
   justify-content: space-between;
@@ -54,11 +55,10 @@ h1 {
   font-weight: 700;
 }
 
-/* CTA */
-
 #cta {
   width: 45%;
   background: url('/Assets/zigzag-yellow-md.png') no-repeat;
+  background-color: var(--yellow);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -108,4 +108,32 @@ input[type="submit"] {
   background-color: #2E2E2E;
   color: #D8C775;
   text-transform: uppercase;
+}
+
+
+/*== Media Queries ==*/
+
+@media (max-width: 800px) {
+
+  /* Header & CTA */
+
+  header, #intro-content {
+    flex-direction: column;
+  }
+
+  #intro-content, #cta {
+    width: 100%;
+  }
+
+  #intro-content > div,
+  #cta > div {
+    width: 80%;
+    padding: 4rem 0;
+  }
+
+  #cta {
+    background: url('/Assets/zigzag-yellow-sm.png') no-repeat;
+    background-size: cover;
+  }
+
 }
