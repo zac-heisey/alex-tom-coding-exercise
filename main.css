@@ -1,0 +1,52 @@
+/*== CSS Variables ==*/
+
+:root {
+  --white: #FFF;
+	--light-gray: #F5F5F5;
+  --dark-gray: #313131;
+  --yellow: #EEA200;
+  --main-font: 'Open Sans', sans-serif;
+}
+
+/*== Global Resets ==*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div,
+ol, ul, li,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*== Homepage Styles ==*/
+
+body {
+  font-family: var(--main-font);
+}
+
+/* Header */
+
+header {
+  color: var(--white);
+  background: url('/Assets/circuit-black.svg');
+  height: 450px;
+  display: flex;
+}
+
+#intro-content {
+  width: 60%;
+}
+
+#cta {
+  width: 40%;
+  background: url('/Assets/zigzag-yellow-md.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: bold;
+}
