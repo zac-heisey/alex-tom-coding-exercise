@@ -9,7 +9,7 @@
     <meta name="description" content="Alex+Tom coding exercise completed by Zac Heisey as part of the Junior Web Developer interview process. Thanks!">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700,700i&display=swap" rel="stylesheet">
     <!-- Main CSS Stylesheet -->
     <link rel="stylesheet" href="/main.css">
   </head>
@@ -39,12 +39,19 @@
       <section id="cta">
         <p id="cta-tagline">Download Your Copy of 'Collateral Name'</p>
         <form class="" action="#" method="POST">
-          <label for="first-name">First Name:</label>
-          <input type="text" name="first-name" id="first-name" value="Jane">
-          <label for="last-name">Last Name:</label>
-          <input type="text" name="last-name" id="last-name" value="Doe">
-          <label for="email">Email Address:</label>
-          <input type="email" name="email" id="email" value="janedoe@prospective.com">
+          <p class="input-fields">
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Jane">
+          </p>
+          <p class="input-fields">
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Doe">
+          </p>
+          <p class="input-fields">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="janedoe@prospective.com">
+          </p>
+          <input type="submit" value="Download Now">
         </form>
       </section>
     </header>

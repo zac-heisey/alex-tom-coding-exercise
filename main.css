@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*== Homepage Styles ==*/
 
-body {
+body, label, input {
   font-family: var(--main-font);
 }
 
@@ -32,7 +32,7 @@ body {
 header {
   color: var(--white);
   background: url('/Assets/circuit-black.svg');
-  height: 450px;
+  height: 600px;
   display: flex;
 }
 
@@ -40,13 +40,60 @@ header {
   width: 60%;
 }
 
+h1 {
+  font-weight: 700;
+}
+
+/* CTA */
+
 #cta {
   width: 40%;
   background: url('/Assets/zigzag-yellow-md.png') no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 2rem 0 0 7rem;
 }
 
-h1 {
-  font-weight: bold;
+#cta-tagline {
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.input-fields {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.input-fields, #cta-tagline {
+  width: 80%;
+  max-width: 340px;
+}
+
+label {
+  display: block;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--dark-gray);
+}
+
+input {
+  width: 100%;
+  border: none;
+  font-size: 1.15rem;
+}
+
+input, ::placeholder {
+  color: var(--dark-gray);
+  font-weight: 700;
+}
+
+input[type="submit"] {
+  width: auto;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background-color: #2E2E2E;
+  color: #D8C775;
+  text-transform: uppercase;
 }
