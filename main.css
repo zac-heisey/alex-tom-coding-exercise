@@ -45,7 +45,7 @@ header {
   margin: 2rem 0 0 1rem;
 }
 
-svg {
+#intro-content > img {
   align-self: flex-start;
   min-width: 94px;
 }
