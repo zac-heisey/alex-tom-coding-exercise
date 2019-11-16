@@ -21,10 +21,27 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+
 /*== Homepage Styles ==*/
 
 body, label, input {
   font-family: var(--main-font);
+}
+
+.learn-more-link {
+  font-style: italic;
+  font-weight: 700;
+  color: #0066CC;
+}
+
+.learn-more-link::after {
+  content: '';
+  background-image: url('/Assets/arrow-right-blue.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 0.75rem;
+  vertical-align: middle;
 }
 
 /* Header & CTA */
@@ -50,7 +67,7 @@ header {
   min-width: 94px;
 }
 
-h1 {
+h1, h2 {
   font-size: 2rem;
   font-weight: 700;
 }
@@ -126,6 +143,51 @@ input[type="submit"] {
   margin-right: 2rem;
 }
 
+/*== Main Section ==*/
+
+main {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+}
+
+main > h2 {
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--white);
+  padding: 4rem 3rem;
+}
+
+.product > img {
+  margin-right: 2rem;
+}
+
+.product-info > h3 {
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+}
+
+.product-spec {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
 /*== Media Queries ==*/
 
 @media (max-width: 800px) {
@@ -160,6 +222,22 @@ input[type="submit"] {
 
   #service-features {
     justify-content: flex-start;
+  }
+
+  /* Main Section */
+
+  #products {
+    grid-template-columns: 1fr;
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+  }
+
+  .product > img {
+    margin-bottom: 2rem;
   }
 
 }
