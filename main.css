@@ -36,7 +36,7 @@ body, label, input {
 
 .learn-more-link::after {
   content: '';
-  background-image: url('/Assets/arrow-right-blue.svg');
+  background-image: url('Assets/arrow-right-blue.svg');
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -59,7 +59,7 @@ h3 {
 header {
   color: var(--white);
   background-color: var(--dark-gray);
-  background: url('/Assets/circuit-black.svg');
+  background: url('Assets/circuit-black.svg');
   height: 600px;
   display: flex;
   justify-content: space-between;
@@ -80,7 +80,7 @@ header {
 #cta {
   width: 45%;
   background-color: var(--yellow);
-  background: url('/Assets/zigzag-yellow-md.png') no-repeat;
+  background: url('Assets/zigzag-yellow-md.png') no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -249,7 +249,7 @@ footer a {
   }
 
   #cta {
-    background: url('/Assets/zigzag-yellow-sm.png') no-repeat;
+    background: url('Assets/zigzag-yellow-sm.png') no-repeat;
     background-size: cover;
   }
 
