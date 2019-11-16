@@ -44,6 +44,16 @@ body, label, input {
   vertical-align: middle;
 }
 
+h1, h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+}
+
 /* Header & CTA */
 
 header {
@@ -65,11 +75,6 @@ header {
 #intro-content > img {
   align-self: flex-start;
   min-width: 94px;
-}
-
-h1, h2 {
-  font-size: 2rem;
-  font-weight: 700;
 }
 
 #cta {
@@ -127,7 +132,7 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* Service Features */
+/*== Service Features ==*/
 
 #service-features {
   display: flex;
@@ -156,6 +161,8 @@ main > h2 {
   margin-bottom: 2rem;
 }
 
+/* Products */
+
 #products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -177,16 +184,31 @@ main > h2 {
   margin-right: 2rem;
 }
 
-.product-info > h3 {
-  color: var(--dark-gray);
-  font-size: 1.5rem;
-}
-
 .product-spec {
   font-weight: 700;
   text-transform: uppercase;
 }
 
+/*== Custom Solutions Section ==*/
+
+#custom-solutions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#custom-solutions > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  padding: 0 9rem;
+}
 
 /*== Media Queries ==*/
 
@@ -238,6 +260,16 @@ main > h2 {
 
   .product > img {
     margin-bottom: 2rem;
+  }
+
+  /* Custom Solutions Section */
+
+  #custom-solutions {
+    grid-template-columns: 1fr;
+  }
+
+  .details {
+    padding: 3rem;
   }
 
 }
